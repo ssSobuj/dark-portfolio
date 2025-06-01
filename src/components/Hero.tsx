@@ -77,7 +77,7 @@ const Hero = () => {
                 // src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d"
                 src="/sobujcv.jpg"
                 alt="Developer workspace"
-                className="w-full h-auto rounded-2xl shadow-2xl object-cover"
+                className="w-full max-h-[500px] h-auto rounded-2xl shadow-2xl object-cover"
               />
               {/* Gradient overlay for better integration */}
               <div className="absolute inset-0 bg-gradient-to-tr from-indigo-500/20 to-purple-600/20 rounded-2xl"></div>
