@@ -1,8 +1,22 @@
-
-import React from 'react';
-import { Github, Linkedin, Mail } from 'lucide-react';
+import React from "react";
+import { Github, Linkedin, Mail, Phone } from "lucide-react";
 
 const Footer = () => {
+  const handleSmoothScroll = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string
+  ) => {
+    e.preventDefault();
+    const targetId = href.replace("#", "");
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
   return (
     <footer className="bg-gray-900 border-t border-gray-800 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -12,8 +26,8 @@ const Footer = () => {
               Sobuj<span className="text-blue-400">.</span>
             </h3>
             <p className="text-gray-400 mb-6">
-              Frontend Developer passionate about creating exceptional digital experiences 
-              with modern technologies and clean, efficient code.
+              Frontend Developer passionate about creating exceptional digital
+              experiences with modern technologies and clean, efficient code.
             </p>
             <div className="flex space-x-4">
               <a
@@ -38,32 +52,48 @@ const Footer = () => {
               >
                 <Mail size={20} />
               </a>
+              <a
+                href="tel:+8801731620933"
+                className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center text-gray-400 hover:text-white hover:bg-blue-600 transition-all duration-200"
+              >
+                <Phone size={20} />
+              </a>
             </div>
           </div>
 
           <div>
-            <h4 className="text-lg font-semibold text-white mb-4">Quick Links</h4>
+            <h4 className="text-lg font-semibold text-white mb-4">
+              Quick Links
+            </h4>
             <div className="space-y-2">
-              {['Home', 'About', 'Skills', 'Projects', 'Contact'].map((link) => (
-                <a
-                  key={link}
-                  href={`#${link.toLowerCase()}`}
-                  className="block text-gray-400 hover:text-white transition-colors duration-200"
-                >
-                  {link}
-                </a>
-              ))}
+              {["Home", "About", "Skills", "Projects", "Contact"].map(
+                (link) => (
+                  <a
+                    key={link}
+                    href={`#${link.toLowerCase()}`}
+                    onClick={(e) => handleSmoothScroll(e, link.toLowerCase())}
+                    className="block text-gray-400 hover:text-white transition-colors duration-200"
+                  >
+                    {link}
+                  </a>
+                )
+              )}
             </div>
           </div>
 
           <div>
-            <h4 className="text-lg font-semibold text-white mb-4">Technologies</h4>
+            <h4 className="text-lg font-semibold text-white mb-4">
+              Technologies
+            </h4>
             <div className="space-y-2">
-              {['React.js', 'Next.js', 'Vue.js', 'TypeScript', 'Tailwind CSS'].map((tech) => (
-                <span
-                  key={tech}
-                  className="block text-gray-400"
-                >
+              {[
+                "React.js",
+                "Next.js",
+                "Vue.js",
+                "TypeScript",
+                "Tailwind CSS",
+              ].map((tech) => (
+                <span key={tech} className="block text-gray-400">
                   {tech}
                 </span>
               ))}
@@ -73,7 +103,8 @@ const Footer = () => {
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-400">
-            © {new Date().getFullYear()} Sobuj Mia. All rights reserved. Built with React & Tailwind CSS.
+            © {new Date().getFullYear()} Sobuj Mia. All rights reserved. Built
+            with React & Tailwind CSS.
           </p>
         </div>
       </div>

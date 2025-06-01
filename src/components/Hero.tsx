@@ -2,6 +2,24 @@ import React from "react";
 import { ArrowDown } from "lucide-react";
 
 const Hero = () => {
+  const handleSmoothScroll = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string
+  ) => {
+    e.preventDefault();
+    const targetId = href.replace("#", "");
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+
+    // Close mobile menu if open
+  };
+
   return (
     <section
       id="home"
@@ -35,13 +53,15 @@ const Hero = () => {
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start items-center">
               <a
-                href="#"
+                href="/Md_Sabuj_Mia_Frontend_Developer_CV_2025.pdf"
+                download
                 className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
               >
                 Download CV
               </a>
               <a
-                href="#about"
+                href="#"
+                onClick={(e) => handleSmoothScroll(e, "#about")}
                 className="border border-gray-600 hover:border-gray-400 text-gray-300 hover:text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 flex items-center gap-2"
               >
                 Learn More
@@ -54,7 +74,8 @@ const Hero = () => {
           <div className="relative animate-fade-in">
             <div className="relative z-10">
               <img
-                src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d"
+                // src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d"
+                src="/sobujcv.jpg"
                 alt="Developer workspace"
                 className="w-full h-auto rounded-2xl shadow-2xl object-cover"
               />
@@ -68,9 +89,9 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        {/* <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
           <ArrowDown className="text-gray-400" size={24} />
-        </div>
+        </div> */}
       </div>
     </section>
   );
