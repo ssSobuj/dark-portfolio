@@ -30,19 +30,19 @@ const Hero = () => {
           {/* Text Content */}
           <div className="animate-fade-in text-center lg:text-left">
             <div className="mb-8">
-              <div className="inline-block px-4 py-2 bg-blue-500/10 border border-blue-500/20 rounded-full mb-6">
-                <span className="text-blue-400 text-sm font-medium">
+              <div className="inline-block px-4 py-2 bg-indigo-500/10 border border-indigo-500/20 rounded-full mb-6">
+                <span className="text-indigo-400 text-sm font-medium">
                   Open for new opportunities
                 </span>
               </div>
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-              I am a <span className="text-blue-400">Full-Stack</span>
+              I am a <span className="text-indigo-400">Full-Stack</span>
               <br />
               Developer Specializing in
               <br />
-              <span className="text-blue-400">front-end</span> Development
+              <span className="text-indigo-400">front-end</span> Development
             </h1>
 
             <p className="text-xl text-gray-300 mb-12 leading-relaxed">
@@ -55,7 +55,7 @@ const Hero = () => {
               <a
                 href="/Md_Sabuj_Mia_Frontend_Developer_CV_2025.pdf"
                 download
-                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                className="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
               >
                 Download CV
               </a>
@@ -80,11 +80,11 @@ const Hero = () => {
                 className="w-full h-auto rounded-2xl shadow-2xl object-cover"
               />
               {/* Gradient overlay for better integration */}
-              <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/20 to-purple-600/20 rounded-2xl"></div>
+              <div className="absolute inset-0 bg-gradient-to-tr from-indigo-500/20 to-purple-600/20 rounded-2xl"></div>
             </div>
 
             {/* Decorative elements */}
-            <div className="absolute -top-4 -right-4 w-20 h-20 bg-blue-500/20 rounded-full blur-xl"></div>
+            <div className="absolute -top-4 -right-4 w-20 h-20 bg-indigo-500/20 rounded-full blur-xl"></div>
             <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-purple-500/20 rounded-full blur-xl"></div>
           </div>
         </div>

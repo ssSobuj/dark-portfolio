@@ -23,7 +23,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8">
           <div>
             <h3 className="text-2xl font-bold text-white mb-4">
-              Sobuj<span className="text-blue-400">.</span>
+              Sobuj<span className="text-indigo-400">.</span>
             </h3>
             <p className="text-gray-400 mb-6">
               Frontend Developer passionate about creating exceptional digital
@@ -34,7 +34,7 @@ const Footer = () => {
                 href="https://github.com/ssSobuj"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center text-gray-400 hover:text-white hover:bg-blue-600 transition-all duration-200"
+                className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center text-gray-400 hover:text-white hover:bg-indigo-600 transition-all duration-200"
               >
                 <Github size={20} />
               </a>
@@ -42,19 +42,19 @@ const Footer = () => {
                 href="https://www.linkedin.com/in/developer-sobuj-mia/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center text-gray-400 hover:text-white hover:bg-blue-600 transition-all duration-200"
+                className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center text-gray-400 hover:text-white hover:bg-indigo-600 transition-all duration-200"
               >
                 <Linkedin size={20} />
               </a>
               <a
                 href="mailto:mdsobujredoy@gmail.com"
-                className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center text-gray-400 hover:text-white hover:bg-blue-600 transition-all duration-200"
+                className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center text-gray-400 hover:text-white hover:bg-indigo-600 transition-all duration-200"
               >
                 <Mail size={20} />
               </a>
               <a
                 href="tel:+8801731620933"
-                className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center text-gray-400 hover:text-white hover:bg-blue-600 transition-all duration-200"
+                className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center text-gray-400 hover:text-white hover:bg-indigo-600 transition-all duration-200"
               >
                 <Phone size={20} />
               </a>
