@@ -38,7 +38,7 @@ const About = () => {
 
             <div className="flex flex-wrap gap-4 mt-8">
               <div className="bg-gray-700 px-4 py-2 rounded-lg">
-                <span className="text-indigo-400 font-semibold">3+</span>
+                <span className="text-indigo-400 font-semibold">1.5+</span>
                 <span className="text-gray-300 ml-2">Years Experience</span>
               </div>
               <div className="bg-gray-700 px-4 py-2 rounded-lg">
@@ -46,7 +46,7 @@ const About = () => {
                 <span className="text-gray-300 ml-2">Projects Completed</span>
               </div>
               <div className="bg-gray-700 px-4 py-2 rounded-lg">
-                <span className="text-indigo-400 font-semibold">5+</span>
+                <span className="text-indigo-400 font-semibold">3+</span>
                 <span className="text-gray-300 ml-2">
                   Technologies Mastered
                 </span>
