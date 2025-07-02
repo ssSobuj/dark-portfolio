@@ -4,14 +4,14 @@ import Dots from "../../components/Dots";
 const Hero = ({ translation }) => {
   const handleDownload = () => {
     // Path to your PDF file in the public folder
-    const pdfUrl = "/Md_Sabuj_Mia_Frontend_Developer_2025.pdf";
+    const pdfUrl = "/MDSabujMia_Resume.pdf";
 
     // Create a temporary anchor element
     const link = document.createElement("a");
     link.href = pdfUrl;
 
     // Set the download attribute with the desired filename
-    link.download = "Md_Sabuj_Mia_Frontend_Developer_2025.pdf";
+    link.download = "MDSabujMia_Resume.pdf";
 
     // Append to DOM, trigger click, then remove
     document.body.appendChild(link);
