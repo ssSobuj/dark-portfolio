@@ -18,12 +18,12 @@ const projects = [
     id: "kiraibd",
     name: "Kirai BD a e-commerce Website",
     description:
-      "I've nearly completed the front end of my e-commerce platform, creating a responsive and engaging user interface with Nuxt.js, Vue.js, and SASS, ensuring a smooth shopping experience with real-time updates.",
+      "I've nearly completed the front end of my e-commerce platform, creating a responsive and engaging user interface with Next.js, Bootstrap and SASS, ensuring a smooth shopping experience with real-time updates.",
     image: "/images/projects/kiraibd.png",
     links: {
       live: "kireibd.com",
     },
-    techs: ["NuxtJs", "Bootstrap", "SCSS"],
+    techs: ["NextJs", "Bootstrap", "SCSS"],
     hasImage: true,
   },
   {
